@@ -1,0 +1,92 @@
+/*
+COLOR PALETTE
+Green White #FEFDFD
+Iron        #D6DCDB
+Lunar Green #2F4438
+Spicy Mix   #815C46
+Domino      #94845A
+*/
+
+/* GLOBAL STYLES
+---------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FEFDFD;
+    background-image: url(../images/flowerbottle.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+}
+article p:first-of-type::first-letter{
+    font-size: large;
+}
+/* last time */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+li {
+    display: inline-block;
+    margin-right: -8px;
+}
+a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #2C3E57;
+    font-weight: bold;
+}
+a:hover {
+    background-color: rgb(255 255 255 / 0.5);
+    color: #2F443880;
+    text-decoration: none;
+    border: 3px solid #94845A80
+}
+footer a{
+    color:#815C46
+}
+/* HOME
+---------------------------------*/
+.home{
+    background: url(../images/student-room.jpg);    
+    background-size: cover;
+}
+.home .content-wrapper{
+    background-color: rgb(255 255 255 / 0.9);
+
+}
+/* RESUME
+---------------------------------*/
+nav {
+    padding: 0%;
+    margin: 0%;
+    background-color: #f3f8f9;
+    background-image: url(../images/readmore.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20%;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+/* Profile
+---------------------------------*/
+
+/* Project
+---------------------------------*/
+
+/* Work Experience
+---------------------------------*/
+
+/* Education
+---------------------------------*/
+
+/* FOOTER
+---------------------------------*/
