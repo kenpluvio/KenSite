@@ -54,7 +54,23 @@ nav ul li a:hover {
     border: 3px solid #94845A80;
     transform: scale(1.1);
 }
-
+.btn {
+    background: #3c8453;
+    color: #f6f6f6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    border-radius: 4px;
+}
+.content-wrapper{
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 /* HOME
 ---------------------------------*/
 .home {
@@ -66,8 +82,27 @@ nav ul li a:hover {
     background-color: rgb(255 255 255 / 0.9);
 
 }
+
 /* RESUME
 ---------------------------------*/
+.resume header::before{
+    background: url(../images/vibes.jpg) center;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 300px;
+}
+.resume-section {
+    margin-bottom: 50px;
+}
+.resume-section h2 {
+    border-bottom: 2px dashed #815C46;
+}
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
 nav {
     padding: 0%;
     margin: 0%;
@@ -90,7 +125,15 @@ nav ul li{
 
 /* Project
 ---------------------------------*/
-
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+.project-item img{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
 /* Work Experience
 ---------------------------------*/
 
