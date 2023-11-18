@@ -77,12 +77,16 @@ nav ul li a:hover {
     background: url(../images/student-room.jpg);
     background-repeat: no-repeat;    
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 .home .content-wrapper {
-    background-color: rgb(255 255 255 / 0.9);
-
+    flex: 1 0 auto;
 }
-
+.content-bg {
+    background-color: rgb(255 255 255 / 0.9);
+    padding: 30px;
+}
 /* RESUME
 ---------------------------------*/
 .resume header::before{
@@ -144,7 +148,10 @@ nav ul li{
 ---------------------------------*/
 footer {
     background: #222;
-    color: #d3d4d6
+    color: #d3d4d6;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 footer a {
     color:#815C46
@@ -155,7 +162,11 @@ footer a {
 }
 .socials li {
     display: inline-block;
+    margin-left: 10px;
 }
 .socials img {
     width: 32px;
+}
+.socials img:hover {
+    opacity: 0.5;
 }
