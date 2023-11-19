@@ -1,0 +1,13 @@
+tml {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+make all the elements border size be calculated within the border.
+
+display: inline-block;
+make inline/block elements both have the ability of showing in the same line, and adjustable of height/width property.
+
+display: flow-root;
+flow-root will make the float elements flow inside their parent elements, which will avoid overflow of other block elements.

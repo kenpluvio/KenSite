@@ -14,13 +14,27 @@ Domino      #94845A
 */
 html {
     box-sizing: border-box;
+    /* font-size: 62.5%; */
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 html, body{
     height: 100%;
+    font-size: 1.10rem;
+    line-height: 1.43;
+}
+.btn {
+    background: #3c8453;
+    color: #f6f6f6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    border-radius: 5px;
 }
 body {
     background-color: #FEFDFD;
@@ -29,14 +43,46 @@ body {
     background-position: bottom center;
     background-size: 100%;
     margin: 0;
+    font-family: 'Chakra Petch', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Josefin Slab', serif;
+    margin: 0;
+}
+h1{
+    font-size: 3.7rem;
+    line-height: 1;
+}
+h2{
+    font-size: 2.6rem;
+}
+h3{
+    font-size: 1.55rem;
+}
+li {
+    padding: 6px;
 }
 article p:first-of-type::first-letter{
     font-size: large;
 }
 /* Navigation
 ---------------------------------*/
-li {
-    padding: 10px;
+nav {
+    padding: 0%;
+    margin: 0%;
+    background-color: #f3f8f9;
+    background-image: url(../images/readmore.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20%;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
     transition: all 0.3s ease; /* Adds a smooth transition effect */
 }
 nav ul li a {
@@ -53,18 +99,6 @@ nav ul li a:hover {
     text-decoration: none;
     border: 3px solid #94845A80;
     transform: scale(1.1);
-}
-.btn {
-    background: #3c8453;
-    color: #f6f6f6;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    display: inline-block;
-    padding: 7px;
-    letter-spacing: 0.1em;
-    line-height: 1;
-    border-radius: 4px;
 }
 .content-wrapper{
     padding: 20px;
@@ -87,6 +121,14 @@ nav ul li a:hover {
     background-color: rgb(255 255 255 / 0.9);
     padding: 30px;
 }
+@media screen and (max-width: 650px){
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 18px;
+    }
+}
 /* RESUME
 ---------------------------------*/
 .resume header::before{
@@ -107,51 +149,92 @@ nav ul li a:hover {
     top: 5px;
     left: 5px;
 }
-nav {
-    padding: 0%;
-    margin: 0%;
-    background-color: #f3f8f9;
-    background-image: url(../images/readmore.jpg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 20%;
-    border-top: 1px solid #666;
-    border-bottom: 1px solid #666;
+@media screen and (max-width: 1300px) {
+    .download-link {
+        position: absolute;
+    }
 }
-nav ul{
-    list-style-type: none;
+@media screen and (max-width: 500px) {
+    .resume header::before{
+        height: 200px;
+    }
+    h1{
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size: 2.0rem;
+    }
+    h3{
+        font-size: 1.35rem;
+    }
 }
-nav ul li{
-    display: inline-block;
-}
-/* Profile
----------------------------------*/
+
 
 /* Project
 ---------------------------------*/
 .project-item {
-    display: flow-root;
     margin: 30px 0;
 }
-.project-item img{
+.project-item img {
     width: 300px;
-    float: left;
-    margin-right: 20px;
+}
+@media screen and (min-width: 900px){
+    .project-item {
+        display: flow-root;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 899px){
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .project-item img{
+        width: 100%;
+        margin: 10px;
+    }
 }
 /* Work Experience
 ---------------------------------*/
+.work-item {
+    margin: auto;
+}
+.work-details {
+    margin: 0;
+}
 
+@media screen and (min-width: 900px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child {
+        margin-top: 0.15em;
+    }
+}
 /* Education
 ---------------------------------*/
-
+.education-item {
+    margin-top: 30px;
+}
+.education-item p {
+    margin: 0;
+}
 /* FOOTER
 ---------------------------------*/
 footer {
     background: #222;
     color: #d3d4d6;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
 }
 footer a {
     color:#815C46
@@ -169,4 +252,18 @@ footer a {
 }
 .socials img:hover {
     opacity: 0.5;
+}
+
+@media screen and (min-width: 900px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 899px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
 }
