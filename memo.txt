@@ -11,3 +11,6 @@ make inline/block elements both have the ability of showing in the same line, an
 
 display: flow-root;
 flow-root will make the float elements flow inside their parent elements, which will avoid overflow of other block elements.
+
+explict columns/rows in grid means the rows were set values previously by grid-template-columns/rows, 
+those columns/rows were not be set values will be implict columns/rows, which can be auto-generated fix values by grid-auto-columns/rows
