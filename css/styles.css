@@ -93,8 +93,22 @@ nav ul li a {
     font-weight: bold;
     border: 3px solid transparent; /* Add transparent border */
 }
+nav ul li a:focus {
+    background-color: rgb(255 255 255 / 0.5);
+    color: #2F443880;
+    text-decoration: none;
+    border: 3px solid #94845A80;
+    transform: scale(1.1);
+}
 nav ul li a:hover {
     background-color: rgb(255 255 255 / 0.5);
+    color: #2F443880;
+    text-decoration: none;
+    border: 3px solid #94845A80;
+    transform: scale(1.1);
+}
+nav ul li a:active {
+    background-color: rgba(125, 23, 23, 0.5);
     color: #2F443880;
     text-decoration: none;
     border: 3px solid #94845A80;
