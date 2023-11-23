@@ -14,3 +14,7 @@ flow-root will make the float elements flow inside their parent elements, which 
 
 explict columns/rows in grid means the rows were set values previously by grid-template-columns/rows, 
 those columns/rows were not be set values will be implict columns/rows, which can be auto-generated fix values by grid-auto-columns/rows
+
+input:not([type="xxx"]):valid{} as a CSS syntax, this will specify those elements which are not xxx type input.
+
+block elements in the inline elements will not be validated

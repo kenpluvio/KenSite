@@ -80,6 +80,7 @@ nav {
 }
 nav ul{
     list-style-type: none;
+    margin: 0;
 }
 nav ul li{
     display: inline-block;
@@ -91,27 +92,25 @@ nav ul li a {
     text-decoration: none;
     color: #2C3E57;
     font-weight: bold;
-    border: 3px solid transparent; /* Add transparent border */
 }
 nav ul li a:focus {
     background-color: rgb(255 255 255 / 0.5);
     color: #2F443880;
     text-decoration: none;
-    border: 3px solid #94845A80;
     transform: scale(1.1);
 }
 nav ul li a:hover {
     background-color: rgb(255 255 255 / 0.5);
     color: #2F443880;
     text-decoration: none;
-    border: 3px solid #94845A80;
+    border-radius: 4%;
+    /* box-shadow: 0px 2px 6px rgba(38,9,106,.7); */
     transform: scale(1.1);
 }
 nav ul li a:active {
     background-color: rgba(125, 23, 23, 0.5);
     color: #2F443880;
     text-decoration: none;
-    border: 3px solid #94845A80;
     transform: scale(1.1);
 }
 .content-wrapper{
@@ -158,11 +157,23 @@ nav ul li a:active {
 .resume-section h2 {
     border-bottom: 2px dashed #815C46;
 }
-.download-link {
+#PDFdlbtn {
     position: fixed;
+    background: rgb(21,104,244);
+    background: linear-gradient(90deg, rgba(21,104,244,1) 0%, rgba(155,93,254,0.95) 100%);
+    
+    font-size: 1em;
+    padding: .5em 1em;
+    border-radius: .25em;
+    box-shadow: 0px 2px 6px rgba(38,9,106,.7);
     top: 5px;
     left: 5px;
 }
+#PDFlink {
+    text-decoration:none;
+    color: #fff;
+}
+
 @media screen and (max-width: 1300px) {
     .download-link {
         position: absolute;
@@ -249,6 +260,7 @@ nav ul li a:active {
 footer {
     background: #222;
     color: #d3d4d6;
+    align-items: center;
 }
 footer a {
     color:#815C46
@@ -256,6 +268,7 @@ footer a {
 .socials {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 .socials li {
     display: inline-block;
