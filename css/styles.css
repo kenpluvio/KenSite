@@ -160,7 +160,7 @@ nav ul li a:active {
 #PDFdlbtn {
     position: fixed;
     background: rgb(21,104,244);
-    background: linear-gradient(90deg, rgba(21,104,244,1) 0%, rgba(155,93,254,0.95) 100%);
+    background: linear-gradient(90deg, rgba(211,04,244,1) 0%, rgba(155,193,254,0.95) 100%);
     
     font-size: 1em;
     padding: .5em 1em;
