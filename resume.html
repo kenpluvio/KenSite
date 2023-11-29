@@ -35,13 +35,13 @@
       </div>
     </header>
     <!-- // NAVIGATION //-->
-    <nav>
-      <ul>
+    <nav class="floatBar">
+      <ul class="sideButton">
         <li><a href="#Profile">Profile</a></li>
         <li><a href="#Projects">Projects</a></li>
         <li><a href="#Work Experience">Work Experience</a></li>
         <li><a href="#Education">Education</a></li>
-        <li><a href="#Socials">Socials</a></li>
+        <li><div id="ConnectMe">Connect Me</div></li>
       </ul>
     </nav>
     
@@ -86,7 +86,10 @@
           </section>
           
           <section class="project-item">
-            <img src="images/project-the-wire-ipsum-500px.png" srcset="images/project-the-wire-ipsum-1000px.png 2x" alt="The Wire Ipsum quote generator website">
+            <img src="images/project-the-wire-ipsum-500px.png" 
+            srcset="images/project-the-wire-ipsum-1000px.png 2x" 
+            alt="The Wire Ipsum quote generator website"
+            loading="lazy">
             <h3>The Wire Ipsum</h3>
             <p>After coming back from teaching a JavaScript workshop, I felt inspired to create something just for fun. I realized that of all the placeholder text/lorem ipsum generators available, there was nothing for HBO’s The Wire fans. Generate some content for your projects today. (Warning: Contains explicit language.)</p>
             <a class="btn" href="https://thewireipsum.com" target="_blank">Website</a>
@@ -152,7 +155,7 @@
     <footer>
       <p>© 2023 by Ken Chai |  <a href="mailto:kenpluvio@gmail.com">kenpluvio@gmail.com</a></p>
 
-      <ul id="Socials" class="socials">
+      <ul class="socials">
         <li>
           <a href="https://www.facebook.com/profile.php?id=61553536132351" target="_blank"><img src="images/placeholder-images/icon-logo-facebook.png" alt="My facebook homepage"></a>
         </li>
