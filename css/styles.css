@@ -69,7 +69,7 @@ article p:first-of-type::first-letter{
 ---------------------------------*/
 .floatBar {
     position: fixed;
-    right: 0px;
+    right: 0;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
@@ -317,4 +317,11 @@ img.rounded {
         text-align: center;
         padding: 10px;
     }
+}
+/* FOOTER
+---------------------------------*/
+#commentArea {
+    position: fixed;
+    right: 0;
+    bottom: 250px;
 }
