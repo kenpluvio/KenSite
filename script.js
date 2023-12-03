@@ -45,5 +45,3 @@ connectBtn.addEventListener("click",()=>{
         newCMArea.hidden = true;
     }
 },false);
-
-
