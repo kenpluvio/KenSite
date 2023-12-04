@@ -1,4 +1,4 @@
-# personal-site
+# Here is Ken's personal site
 
-personal-site code
-add js features
+Welcome!
+You can find my resume and personal profile here
