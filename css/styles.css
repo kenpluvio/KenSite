@@ -21,7 +21,7 @@ html, body {
 }
 
 .btn {
-  background: #3c8453;
+  background: rgb(111, 111, 111);
   color: #f6f6f6;
   text-decoration: none;
   text-transform: uppercase;
@@ -34,13 +34,16 @@ html, body {
 }
 
 body {
-  background-color: #FEFDFD;
-  background-image: url(../images/flowerbottle.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: 100%;
+  background-color: #FdFdFd;
   margin: 0;
   font-family: "Chakra Petch", sans-serif;
+}
+
+header {
+  height: 100vh;
+  background: url(../images/birds2.jpg) center;
+  background-size: cover;
+  background-position: 50% 20%;
 }
 
 h1, h2, h3 {
@@ -49,7 +52,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3.7rem;
+  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -107,7 +110,7 @@ article p:first-of-type::first-letter {
   height: 100px;
   border-radius: 50%;
   background-color: white;
-  border: 3px solid rgba(38, 9, 106, 0.7);
+  border: 3px solid rgba(27, 27, 27, 0.7);
   color: #2C3E57;
   font-weight: bold;
   transition: all 0.3s ease;
@@ -147,7 +150,7 @@ article p:first-of-type::first-letter {
   height: 100px;
   border-radius: 50%;
   background-color: white;
-  border: 3px solid rgba(38, 9, 106, 0.7);
+  border: 3px solid rgba(28, 28, 28, 0.7);
   color: #2C3E57;
   font-weight: bold;
   transition: all 0.3s ease;
@@ -175,8 +178,20 @@ article p:first-of-type::first-letter {
   flex-direction: column;
 }
 
-.home .content-wrapper {
+.resume header::before {
+  content: "";
+  display: block;
+  height: 236px;
+}
+
+.header-ID {
   flex: 1 0 auto;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.header-ID h1 {
+  margin-bottom: 16px;
 }
 
 .content-bg {
@@ -185,7 +200,7 @@ article p:first-of-type::first-letter {
 }
 
 @media screen and (max-width: 650px) {
-  .home .content-wrapper {
+  .header-ID {
     padding: 10px;
   }
   .content-bg {
@@ -194,14 +209,6 @@ article p:first-of-type::first-letter {
 }
 /* RESUME
 ---------------------------------*/
-.resume header::before {
-  background: url(../images/vibes.jpg) center;
-  background-size: cover;
-  content: "";
-  display: block;
-  height: 300px;
-}
-
 .resume-section {
   margin-bottom: 50px;
 }
@@ -213,7 +220,7 @@ article p:first-of-type::first-letter {
 #PDFdlbtn {
   position: fixed;
   background: rgb(21, 104, 244);
-  background: linear-gradient(90deg, rgb(211, 4, 244) 0%, rgba(155, 193, 254, 0.95) 100%);
+  background: linear-gradient(90deg, rgb(51, 51, 51) 0%, rgba(255, 255, 255, 0.95) 100%);
   font-size: 1em;
   padding: 0.5em 1em;
   border-radius: 0.25em;
@@ -246,7 +253,7 @@ article p:first-of-type::first-letter {
     font-size: 1.35rem;
   }
 }
-.content-wrapper {
+#main-content {
   padding: 20px;
   max-width: 900px;
   margin: 0 auto;
@@ -372,8 +379,8 @@ img.rounded {
 ---------------------------------*/
 #commentArea {
   position: fixed;
-  right: 0;
-  bottom: 250px;
+  right: 5px;
+  bottom: 180px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -7,6 +7,7 @@ class textArea {
         id,
         rows,
         cols,
+        placeholder,
         hidden,
         exist
     ) {
@@ -14,19 +15,20 @@ class textArea {
         this.id = id;
         this.rows = rows;
         this.cols = cols;
+        this.placeholder=placeholder;
         this.hidden = hidden;
         this.exist = exist;
     }
 }
 
-const newCMArea = new textArea("textArea", "textArea", 4, 50, true, false);
+const newCMArea = new textArea("textArea", "textArea", 4, 50, "Working on it!", true, false);
 
 const commentArea = document.createElement("div");
 commentArea.setAttribute("id", "commentArea");
 commentArea.setAttribute("style", "display: none");
 commentArea.innerHTML= `
     <label for=${newCMArea.name}>Enter Text:</label>
-    <textarea id=${newCMArea.id} name=${newCMArea.name} rows=${newCMArea.rows} cols=${newCMArea.cols}></textarea>
+    <textarea id=${newCMArea.id} name=${newCMArea.name} rows=${newCMArea.rows} cols=${newCMArea.cols} placeholder="${newCMArea.placeholder}"></textarea>
 `;
 
 connectBtn.addEventListener("click",()=>{
