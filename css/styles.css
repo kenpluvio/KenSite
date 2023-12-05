@@ -39,7 +39,7 @@ body {
   font-family: "Chakra Petch", sans-serif;
 }
 
-header {
+.resume header {
   height: 100vh;
   background: url(../images/birds2.jpg) center;
   background-size: cover;
@@ -70,6 +70,16 @@ li {
 
 article p:first-of-type::first-letter {
   font-size: large;
+}
+
+.header-ID {
+  flex: 1 0 auto;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.header-ID h1 {
+  margin-bottom: 16px;
 }
 
 /* Float Bar
@@ -184,14 +194,11 @@ article p:first-of-type::first-letter {
   height: 236px;
 }
 
-.header-ID {
+.home .content-wrapper {
   flex: 1 0 auto;
-  padding: 30px;
+  padding: 20px;
   max-width: 900px;
   margin: 0 auto;
-}
-.header-ID h1 {
-  margin-bottom: 16px;
 }
 
 .content-bg {
@@ -200,7 +207,7 @@ article p:first-of-type::first-letter {
 }
 
 @media screen and (max-width: 650px) {
-  .header-ID {
+  .home .content-wrapper {
     padding: 10px;
   }
   .content-bg {
