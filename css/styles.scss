@@ -62,9 +62,9 @@ body {
 }
 .resume header {
     height: 100vh;
-    background: url(../images/birds2.jpg) center;
+    background: url(../images/leavesWall.jpg) center;
     background-size: cover;
-    background-position: 50% 20%;
+    background-position: 50% 70%;
 }
 h1, h2, h3{
     font-family: 'Josefin Slab', serif;
@@ -163,9 +163,9 @@ article p:first-of-type::first-letter{
     text-align: center;
     cursor: pointer;
     padding: 1rem;
-    width: 120px;
-    height: 100px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0;
     background-color: white;
     border: 3px solid rgba(28, 28, 28, .7);
     color: #2C3E57;
@@ -187,16 +187,24 @@ article p:first-of-type::first-letter{
 /* HOME
 ---------------------------------*/
 .home {
-    background: url(../images/student-room.jpg);
-    background-repeat: no-repeat;    
-    background-size: cover;
     display: flex;
     flex-direction: column;
+    video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translateX(-50%) translateY(-50%);
+    }
 }
 .resume header::before{
     content: "";
     display: block;
-    height: 236px;
+    height: 280px;
 }
 .home .content-wrapper {
     flex: 1 0 auto;
@@ -205,7 +213,8 @@ article p:first-of-type::first-letter{
     margin: 0 auto;
 }
 .content-bg {
-    background-color: rgb(255 255 255 / 0.9);
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
     padding: 30px;
 }
 @media screen and (max-width: 650px){
@@ -260,9 +269,9 @@ article p:first-of-type::first-letter{
     }
 }
 #main-content {
-    padding: 20px;
-    max-width: 900px;
     margin: 0 auto;
+    padding: 20px;
+    max-width: 900px;  
 }
 
 /* Project
@@ -293,7 +302,7 @@ article p:first-of-type::first-letter{
     }
 }
 @media screen and (max-width: 500px) {
-    .project-item img{
+    .project-item img {
         width: 100%;
         margin: 10px;
     }
@@ -331,6 +340,9 @@ footer {
     background: #222;
     color: #d3d4d6;
     align-items: center;
+    p {
+        margin: 13px 0;
+    }
 }
 footer a {
     color:#815C46
@@ -350,11 +362,11 @@ footer a {
 .socials img:hover {
     opacity: 0.5;
 }
-img.rounded {
+#rounded {
     object-fit: cover;
     border-radius: 50%;
-    height: 42px;
-    width: 42px;
+    height: 40px;
+    width: 40px;
 }
 @media screen and (min-width: 900px) {
     footer {
@@ -369,7 +381,7 @@ img.rounded {
         padding: 10px;
     }
 }
-/* FOOTER
+/* Comment Area
 ---------------------------------*/
 #commentArea {
     position: fixed;
